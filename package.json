@@ -1,0 +1,21 @@
+{
+  "name": "ecocode-javascript-test-project",
+  "version": "1.0.0",
+  "description": "JavaScript project to test ESLint and SonarQube plugins of ecoCode",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/green-code-initiative/ecoCode-javascript-test-project.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Green Code Initiative",
+  "scripts": {
+    "lint": "eslint src/.",
+    "lint:report": "eslint src/. -f json -o eslint-report.json",
+    "sonar": "sonar-scanner"
+  },
+  "devDependencies": {
+    "@ecocode/eslint-plugin": "^0.1.0",
+    "eslint": "^8.36.0",
+    "sonarqube-scanner": "^3.0.1"
+  }
+}
