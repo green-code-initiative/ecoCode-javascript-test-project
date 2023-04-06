@@ -1,6 +1,10 @@
 {
-    "env": {
-        "browser": true
-    },
-    "extends": ["eslint:recommended", "plugin:@ecocode/recommended"]
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@ecocode/recommended"
+  ]
 }
