@@ -10,11 +10,9 @@ interface Pagination {
 
 @Controller("cats")
 export class CatsController {
-  constructor() {}
-
   //NOK: raw collection is not paginated
   @Get("raw")
-  getRawCollection(): Promise<String[]> {
+  getRawCollection(): Promise<string[]> {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(["Siamese", "Maine Coon", "Chartreux"]);
@@ -32,7 +30,7 @@ export class CatsController {
           currentPage: 0,
           totalPages: 1,
         });
-      });
+      }, 300);
     });
   }
 }
