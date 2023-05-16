@@ -3,9 +3,6 @@
 # "sonar.login" variable : private TOKEN generated in your local SonarQube during installation
 # (input paramater of this script)
 
-# requirements : yarn installed with 
-# "npm instal yarn"
-
 # building phase
 yarn install
 
