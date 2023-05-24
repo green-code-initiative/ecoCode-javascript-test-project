@@ -1,6 +1,4 @@
-import {
-  Controller, Get
-} from "@nestjs/common";
+import { Controller, Get } from "@nestjs/common";
 
 interface Pagination {
   items: string[];
@@ -10,9 +8,8 @@ interface Pagination {
 
 @Controller("cats")
 export class CatsController {
-  //NOK: raw collection is not paginated
-  @Get("raw")
-  getRawCollection(): Promise<string[]> {
+  @Get("raw") // Non-compliant: raw collection is not paginated
+  public getRawCollection(): Promise<string[]> {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(["Siamese", "Maine Coon", "Chartreux"]);
@@ -20,9 +17,13 @@ export class CatsController {
     });
   }
 
-  //OK: collection is paginated
-  @Get("page")
-  getPaginatedCollection(): Promise<Pagination> {
+  @Get(":id") // Compliant: find a specific item of a collection
+  public getSpecificItem(): Promise<string> {
+    return null;
+  }
+
+  @Get("page") // Compliant: collection is paginated
+  public getPaginatedCollection(): Promise<Pagination> {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({
