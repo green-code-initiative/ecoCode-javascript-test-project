@@ -1,4 +1,4 @@
-var element = document.getElementById("#element");
+const element = document.getElementById("#element");
 
 function invalidStyleChanges() {
   element.style.height = "800px"; // Non-compliant: multiple properties assignments

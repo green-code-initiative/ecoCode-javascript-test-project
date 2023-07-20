@@ -6,7 +6,7 @@ function invalidShowCard() {
 
 // OK: dom element is stored in a variable
 function validShowCard() {
-  var card = document.querySelector("#card");
+  const card = document.querySelector("#card");
   card.style.backgroundColor = "red";
   card.innerHTML = "Hello world!";
 }
