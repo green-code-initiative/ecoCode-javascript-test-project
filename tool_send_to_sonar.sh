@@ -6,8 +6,5 @@
 # building phase
 yarn install
 
-# analysis phase
-yarn lint:report
-
 # sending to Sonar phase
 yarn sonar -Dsonar.login=$1
