@@ -1,3 +1,3 @@
-import isEmpty from "lodash/isEmpty";
+import isEmpty from "lodash/isEmpty"; // Compliant
 
 isEmpty("");
