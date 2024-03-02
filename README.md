@@ -14,7 +14,7 @@ Then, check that _ecoCode_ rules are enabled in the quality profile that will be
 
 You will also need some JavaScript tools installed on your computer:
 
-- Node.js 14.17.x, 16.x, 18.x or newer
+- A supported version of Node.js
 - Yarn (install it globally with `npm install -g yarn`)
 
 ### 2. Send Sonar metrics to local SonarQube
@@ -28,7 +28,7 @@ Use the following Shell script which will do the job for you:
 Or you can manually run these commands:
 
 - Install dependencies: `yarn install`
-- Start Sonar Scanner: `yarn sonar -Dsonar.login=MY_SONAR_TOKEN`
+- Start Sonar Scanner: `yarn sonar -Dsonar.token=MY_SONAR_TOKEN`
 
 ### 3. Check errors
 
