@@ -14,12 +14,12 @@
     "sonar": "sonar-scanner"
   },
   "devDependencies": {
-    "@ecocode/eslint-plugin": "^1.4.0",
-    "@nestjs/common": "^10.3.3",
-    "@typescript-eslint/eslint-plugin": "^5.59.6",
-    "@typescript-eslint/parser": "^5.59.6",
+    "@ecocode/eslint-plugin": "^1.5.0",
+    "@nestjs/common": "^10.3.8",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
     "eslint": "^8.57.0",
-    "sonarqube-scanner": "^3.3.0",
-    "typescript": "^5.3.3"
+    "sonarqube-scanner": "^3.5.0",
+    "typescript": "^5.4.5"
   }
 }
