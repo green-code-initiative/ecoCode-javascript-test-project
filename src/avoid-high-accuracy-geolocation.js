@@ -1,3 +1,6 @@
+import * as Location from 'expo-location';
+
+// Web
 function success(pos) {
   console.log(pos.coords);
 }
@@ -16,3 +19,8 @@ navigator.geolocation.getCurrentPosition(success);
 // Compliant: explicit enableHighAccuracy set to false
 const validOptions = { enableHighAccuracy: false, maximumAge: 0 };
 navigator.geolocation.getCurrentPosition(success, error, validOptions);
+
+// React Native
+Location.enableNetworkProviderAsync(); // Non-compliant
+
+Location.requestPermissionsAsync(); // Compliant
